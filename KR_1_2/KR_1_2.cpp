@@ -132,9 +132,12 @@ int main()
 		public: ~Rect()
 		{
 			coordinate.X = 0;
-			coordinate.Y = 23;
+			coordinate.Y = rb.y + 1;
 
 			SetConsoleCursorPosition(out_handle, coordinate);
+
+			cout << "Preset height: " << rb.y << endl;
+			cout << "Preset width: "  << rb.x << endl;
 		}
 
 	};
